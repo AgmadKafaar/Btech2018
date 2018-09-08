@@ -1,1 +1,0 @@
-/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio/2017/Community/Common7/IDE/devenv.exe C:\\Users\\Kafaar\\Documents\\GitHub\\Btech2018\\src\\Gentrifcation.MachineLearning\\Gentrifcation.MachineLearning.sln
