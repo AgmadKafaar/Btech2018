@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  gentrifcation.machinelearning.api:
+    image: ${DOCKER_REGISTRY}gentrifcationmachinelearningapi
+    build:
+      context: .
+      dockerfile: Gentrifcation.MachineLearning.Api\Dockerfile
