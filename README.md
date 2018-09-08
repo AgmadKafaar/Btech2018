@@ -8,11 +8,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-[.NET Core](https://www.microsoft.com/net/download) - Development Framework
-[Nuget](https://www.nuget.org/)
-[Visual Studio Code](https://code.visualstudio.com/download) with C# packages installed.
+*[.NET Core](https://www.microsoft.com/net/download) - Development Framework
+*[Nuget](https://www.nuget.org/)
+*[Visual Studio Code](https://code.visualstudio.com/download) with C# packages installed.
 OR
-[Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/)
+*[Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/)
 
 ### Installing
 
