@@ -46,7 +46,7 @@ Please read [CONTRIBUTING.md](https://github.com/AgmadKafaar/Btech2018/blob/mast
 
 ## Authors
 
-See the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See the list of [contributors](https://github.com/AgmadKafaar/Btech2018/graphs/contributors) who participated in this project.
 
 ## License
 
@@ -54,6 +54,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 ## Acknowledgments
 
-[Emily Royall](http://emilyroyall.com/) for her research into discovering gentrifying neighbourhoods using a data-driven technique.
-[César Souza](http://crsouza.com/) for open sourcing his machine learning framework for .net.
-[Prof. Olawande Daramola](https://sites.google.com/site/wandesnet/home) for his guidance throughout this project.
+* [Emily Royall](http://emilyroyall.com/) for her research into discovering gentrifying neighbourhoods using a data-driven technique.
+* [César Souza](http://crsouza.com/) for open sourcing his machine learning framework for .net.
+* [Prof. Olawande Daramola](https://sites.google.com/site/wandesnet/home) for his guidance throughout this project.
