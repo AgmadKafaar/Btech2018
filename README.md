@@ -1,6 +1,6 @@
 # B.Tech 2018 - Final Year Project
 
-One Paragraph of project description goes here
+Final Year Project for B.Tech: IT. This project builds a machine learning model to identify the probability of a neighbourhood becoming gentrified. The machine learning model is serialised into a binary file that is further used by an API to output the probability of a neighbourhood becoming gentrified.
 
 ## Getting Started
 
@@ -8,59 +8,33 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+[.NET Core](https://www.microsoft.com/net/download) - Development Framework
+[Nuget](https://www.nuget.org/)
+[Visual Studio Code](https://code.visualstudio.com/download) with C# packages installed.
+OR
+[Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get a development environment running:
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+1. Restore Packages
+2. Build Solution
+3. Run BuildLearningModel project to build the serialised learning model file.
+4. Copy the serialised file into the API's root directory
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Add additional notes about how to deploy this on a live system:
+* The API system can be deployed to a physical or virtual server on IIS, nginx or apache.
+* The API can be deployed to an Infrastructure-As-A-Platform environment such as Azure, Google App Egine etc.
+* The API can be containerised with Docker.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Accord-net](http://accord-framework.net/) - The machine learning framework used
+* [Nuget](https://www.nuget.org/) - Dependency Management
+* [Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/) - IDE used
 
 ## Contributing
 
@@ -68,13 +42,11 @@ Please read [CONTRIBUTING.md](https://github.com/AgmadKafaar/Btech2018/blob/mast
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+[SemVer](http://semver.org/) is used for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
@@ -82,6 +54,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+[Emily Royall](http://emilyroyall.com/) for her research into discovering gentrifying neighbourhoods using a data-driven technique.
+[César Souza](http://crsouza.com/) for open sourcing his machine learning framework for .net.
+[Prof. Olawande Daramola](https://sites.google.com/site/wandesnet/home) for his guidance throughout this project.
