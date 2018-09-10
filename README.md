@@ -50,7 +50,7 @@ See the list of [contributors](https://github.com/AgmadKafaar/Btech2018/graphs/c
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the GPL-3 License - see the [LICENSE.md](LICENSE) file for details
 
 ## Acknowledgments
 
