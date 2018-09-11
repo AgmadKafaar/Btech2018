@@ -35,7 +35,7 @@ Please read [CONTRIBUTING.md](https://github.com/AgmadKafaar/Btech2018/blob/mast
 
 ## Versioning
 
-[SemVer](http://semver.org/) is used for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+[SemVer](http://semver.org/) is used for versioning. For the versions available, see the [tags on this repository](https://github.com/AgmadKafaar/Btech2018/tags). 
 
 ## Authors
 
