@@ -1,6 +1,6 @@
 # B.Tech 2018 - Final Year Project
 
-Final Year Project for B.Tech: IT. This project builds a machine learning model to identify the probability of a neighbourhood becoming gentrified. The machine learning model is serialised into a binary file that is further used by an API to output the probability of a neighbourhood becoming gentrified.
+Final Year Project for B.Tech: IT. This project builds a machine learning model to identify the probability of a neighbourhood becoming gentrified.
 
 ## Getting Started
 
@@ -8,33 +8,26 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* [.NET Core](https://www.microsoft.com/net/download) - Development Framework
-* [Nuget](https://www.nuget.org/)
-* [Visual Studio Code](https://code.visualstudio.com/download) with C# packages installed.
-OR
-* [Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/)
+* [Machine Learning Server 9.30](https://docs.microsoft.com/en-us/machine-learning-server/install/machine-learning-server-windows-install) - Installs R for Windows
+* [poLCA](https://www.jstatsoft.org/article/view/v042i10) - R Package for LCA
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development environment running:
 
-1. Restore Packages
-2. Build Solution
-3. Run BuildLearningModel project to build the serialised learning model file.
-4. Copy the serialised file into the API's root directory
+* You are required to register for a Microsoft account and activate VSS essentials platform.
+* Download the Machine Learning Server package from the VSS essentials platform for free.
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system:
-* The API system can be deployed to a physical or virtual server on IIS, nginx or apache.
-* The API can be deployed to an Infrastructure-As-A-Platform environment such as Azure, Google App Egine etc.
-* The API can be containerised with Docker.
+* Run the script in RGui or another R client
+* Deployment of the learning model to a web service is described [here](https://docs.microsoft.com/en-us/machine-learning-server/operationalize/how-to-deploy-web-service-publish-manage-in-r).
 
 ## Built With
 
-* [Accord-net](http://accord-framework.net/) - The machine learning framework used
-* [Nuget](https://www.nuget.org/) - Dependency Management
-* [Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/) - IDE used
+* [Machine Learning Server 9.30](https://docs.microsoft.com/en-us/machine-learning-server/install/machine-learning-server-windows-install)- The machine learning framework used
+* [Notepad ++](https://notepad-plus-plus.org/download/v7.5.8.html) - text editor used
+* [RGui](https://cran.r-project.org/bin/windows/base/) - R for Windows
 
 ## Contributing
 
@@ -55,5 +48,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 ## Acknowledgments
 
 * [Emily Royall](http://emilyroyall.com/) for her research into discovering gentrifying neighbourhoods using a data-driven technique.
-* [César Souza](http://crsouza.com/) for open sourcing his machine learning framework for .net.
 * [Prof. Olawande Daramola](https://sites.google.com/site/wandesnet/home) for his guidance throughout this project.
