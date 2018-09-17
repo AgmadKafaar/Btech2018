@@ -1,6 +1,0 @@
-@book{international2012international,
-  title={International Standard Classification of Occupations 2008 (ISCO-08): Structure, group definitions and correspondence tables},
-  author={International Labour Office},
-  year={2012},
-  publisher={International Labour Office}
-}
