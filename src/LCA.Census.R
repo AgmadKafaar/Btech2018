@@ -11,7 +11,7 @@ library("poLCA")
 fftempdir = "~/GitHub/Btech2018/data/Tempff"
 
 # Chunk load 2001 census data into dataframe from csv file
-X2001Census <- read.csv.ffdf(NULL, "~/GitHub/Btech2018/data/Worksheet/2001.Combined.Dataset.Coded.Dummy.csv")
+X2001Census <- read.csv.ffdf(NULL, "2001.Combined.Dataset.Coded.csv")
 
 # remove ward column from dataframe
 X2001Census_sub <- X2001Census[setdiff(colnames(X2001Census), c("Ward"))]
