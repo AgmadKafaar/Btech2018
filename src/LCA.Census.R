@@ -14,17 +14,17 @@ fftempdir = "~/GitHub/Btech2018/data/Tempff"
 X2001Census <- read.csv.ffdf(NULL, "2001.Combined.Dataset.Coded.csv")
 
 # remove ward column from dataframe
-X2001Census_sub <- X2001Census[setdiff(colnames(X2001Census), c("Ward"))]
+X2001Census_sub <- X2001Census[setdiff(colnames(X2001Census), c("Ward","PERCENTAGE_FAMILY","HOUSEHOLDS"))]
 
-func <- cbind(AGE_INDEX,INCOME_INDEX,EDUCATION_INDEX,PERCENTAGE_WHITE,PERCENTAGE_FAMILY,HOUSEHOLDS)~1
+func <- cbind(AGE_INDEX,INCOME_INDEX,EDUCATION_INDEX,PERCENTAGE_WHITE)~1
 
 max_II <- -100000
 min_bic <- 100000
 
-for(i in 2:10){
+for(i in 2:4){
   lca <- poLCA(func, X2001Census_sub, nclass=i, maxiter=10000, 
-               tol=1e-5, na.rm=FALSE,  
-               nrep=5, verbose=TRUE, calc.se=TRUE)
+               tol=1e-3, na.rm=FALSE,  
+               nrep=5000, verbose=TRUE, calc.se=TRUE)
   if(lca$bic < min_bic){
     min_bic <- lca$bic
     LCA_best_model<-lca
@@ -32,18 +32,18 @@ for(i in 2:10){
 }    	
 LCA_best_model
 
-X2011Census <- read.csv.ffdf(NULL, "2011.Combined.Dataset.Coded2.csv")
+X2011Census <- read.csv.ffdf(NULL, "2011.Combined.Dataset.Coded.csv")
 
 # remove ward column from dataframe
-X2011Census_sub <- X2011Census[setdiff(colnames(X2011Census), c("Ward"))]
+X2011Census_sub <- X2011Census[setdiff(colnames(X2011Census), c("Ward","PERCENTAGE_FAMILY","HOUSEHOLDS"))]
 
 max_II <- -100000
 min_bic <- 100000
 
-for(i in 2:10){
+for(i in 2:4){
   lca <- poLCA(func, X2011Census_sub, nclass=i, maxiter=10000, 
-               tol=1e-5, na.rm=FALSE,  
-               nrep=5, verbose=TRUE, calc.se=TRUE)
+               tol=1e-3, na.rm=FALSE,  
+               nrep=5000, verbose=TRUE, calc.se=TRUE)
   if(lca$bic < min_bic){
     min_bic <- lca$bic
     LCA_best_model_2011<-lca
