@@ -70,8 +70,15 @@ fviz_pca_var(pca, col.var = "contrib",
 
 library("corrplot")
 var <- get_pca_var(pca)
+# create correlation matrix of census dataset
+census.cor <- cor(census)
+corrplot(census.cor, is.corr=FALSE)
+
+#quality of the representation for variables
 corrplot(var$cos2, is.corr = FALSE)
+#Contributions of the variables to the principal components
 corrplot(var$contrib, is.corr=FALSE)
+
 fviz_contrib(pca, choice = "var", axes = 1)
 fviz_contrib(pca, choice = "var", axes = 2)
 
@@ -98,7 +105,6 @@ X2001Census_sub <- X2001Census[setdiff(colnames(X2001Census), c("Ward","PERCENTA
 
 func <- cbind(AGE_INDEX,INCOME_INDEX,EDUCATION_INDEX,PERCENTAGE_WHITE)~1
 
-max_II <- -100000
 min_bic <- 100000
 
 for(i in 2:4){
@@ -117,7 +123,6 @@ X2011Census <- read.csv.ffdf(NULL, "2011.Combined.Dataset.Coded.csv")
 # remove ward,Percentage_family, households columns from dataframe
 X2011Census_sub <- X2011Census[setdiff(colnames(X2011Census), c("Ward","PERCENTAGE_FAMILY","HOUSEHOLDS"))]
 
-max_II <- -100000
 min_bic <- 100000
 
 for(i in 2:4){
